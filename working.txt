@@ -1,0 +1,35 @@
+                    User enters a prompt
+                           │
+                           ▼
+                      Main.java
+                           │
+        ┌──────────────────┴──────────────────┐
+        │                                     │
+        │ Normal Chat                         │ Email Request(send email)
+        │                                     │
+        ▼                                     ▼
+  GeminiClient.java                 Create Email Prompt
+        │                                     │
+        ▼                                     ▼
+  Send HTTP POST Request              GeminiClient.java
+        │                                     │
+        ▼                                     ▼
+      Gemini API                     Generate Subject & Body
+        │                                     │
+        ▼                                     ▼
+   JSON Response                     ResponseParser.java
+        │                                     │
+        ▼                                     ▼
+ResponseParser.java               Display Email Preview
+        │                                     │
+        ▼                                     ▼
+ Display Chat Response           User Confirmation (Y/N)
+                                              │
+                                              ▼
+                                      EmailService.java
+                                              │
+                                              ▼
+                                    Gmail SMTP Server
+                                              │
+                                              ▼
+                                   Email Delivered
