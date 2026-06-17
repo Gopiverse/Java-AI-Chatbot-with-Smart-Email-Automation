@@ -107,4 +107,4 @@ java -cp ".;src;lib/*" Main
 
 **Gopika GS**
 
-B.Tech Computer Science and Engineering
+B.Tech IT
